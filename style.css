@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+html {
+  background-color:black;
+  color: white;
+}
+.header {
+  display: flex;
+  align-items: center;
+  z-index: 6;
+}
+
+nav {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.navbar {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  top:-1px;
+  
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar ul li {
+  list-style: none;
+  margin: 20px 12px;
+  
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 6px;
+  font-size: 24px;
+  z-index: 6;
+}
+
+.navbar ul li a:hover {
+  color: rgb(218, 215, 215);
+}
+
+.projek {
+  width: 300px;
+  height: 42px;
+  position: relative;
+  left: 35px;
+  top: 20px;
+  text-align: left;
+  font-size: 28px;
+  letter-spacing: 0;
+  color: white;
+  
+}
+
+.zorobg {
+  position: absolute;
+  width: 99%;
+  height:0;
+  top: -50px;
+  z-index: -5;
+  right: 200px;
+}
+
+.namaku{
+  font-size: 100px;
+  color: black;
+  -webkit-text-stroke: 0.5px whitesmoke;
+  letter-spacing: 1px;
+  margin-top:500px;
+  background-color: white;
+}
+.developer{
+  font-size: 100px;
+  color: black;
+  -webkit-text-stroke: 0.5px whitesmoke;
+  letter-spacing: 1px;
+  margin-top:0px;
+  margin-left: 200px;
+}
+.about {
+    height: 300px;
+    border-radius: 5px;
+}
+.card{
+    margin: 50px;
+    height: 500px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    background: rgb(63, 63, 63);
+
+}
+.container{
+    display: flex;
+}
+h1{
+    text-align: center;
+    margin: 10px;
+    font-size: 40;
+}
+.abt{
+    height: 200px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+}
+.body{
+    background-color: whitesmoke;
+}
+.card:hover{
+    cursor: pointer;
+}
+html{
+    scroll-padding: 30em;
+}
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: yellow;
+    border: none;
+    cursor: pointer;
+    z-index: 99;
+    overflow: hidden;
+  }
+  
+  #backToTopBtn span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 28px;
+    color: #fff;
+    transition: transform 0.3s ease;
+  }
+  
+  #backToTopBtn:hover span {
+    transform: scale(1.2);
+  }
+  
+  #backToTopBtn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #ff6a00, #ee0979);
+    opacity: 0.9;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+  }
+  
+  #backToTopBtn:hover:before {
+    transform: scale(1);
+  }
+  
